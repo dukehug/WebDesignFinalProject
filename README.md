@@ -1,6 +1,6 @@
 # FinalProject reference 
 
-<img src="/resource/media/images/IMG_1085.JPG" alt="IMG_1085" style="zoom:10%;" />
+<img src="/resource/media/images/IMG_1085.JPG" alt="IMG_1085" style="zoom:5%;" />
 
 Bootstrap
 
