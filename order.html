@@ -1,0 +1,203 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="resource\style\style.css">
+    <link rel="javascript" href="resource\js\javascript.js">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="navbar-brand">
+            <img src="resource\media\images\logo-no-background.png" width="170" height="30" class="d-inline-block align-top" alt="Logo">
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="products.html">PRODUCTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="order.html">ORDER</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Body -->
+
+    <section class="body-section">
+        <div>
+            <h2>Order List</h2>
+            <p>Please select the product you need to buy.</p>
+
+
+            <div class="product">
+                <img class="itemImg" src="resource\media\images\products\thumbnail\a4tECH.jpg" alt="Product 1">
+                <div class="details">
+                    <h5 class="product-name">A4Tech PK-925H</h5>
+                    <p class="desc">Full-HD Resolution Built in Microphone Webcam </p>
+                </div>
+                <div class="price">Price:₱ 1,020</div>
+                <input class="quantity" type="checkbox" value="a4tech" id="chkA4tech" name="chkItem">
+            </div>
+
+
+            <div class="product">
+                <img class="itemImg" src="resource\media\images\products\thumbnail\G102.jpg" alt="Product 1">
+                <div class="details">
+                    <h5 class="product-name">LogiTech G102</h5>
+                    <p class="desc">Light Sync with Customizable RGB Lighting </p>
+                </div>
+                <div class="price">Price:₱ 930</div>
+                <input class="quantity" type="checkbox" value="g102" id="chkG102" name="chkItem">
+            </div>
+
+
+            <div class="product">
+                <img class="itemImg" src="resource\media\images\products\thumbnail\keyboard2 Main.jpg" alt="Product 1">
+                <div class="details">
+                    <h5 class="name">Mechanical keyboard</h5>
+                    <p class="desc">Mechanical keyboard color pink 87key</p>
+                </div>
+                <div class="price">Price:₱ 2,500 </div>
+                <input class="quantity" type="checkbox" value="mckeyboard" id="chkMckeyboard" name="chkItem">
+            </div>
+
+
+            <div class="product">
+                <img class="itemImg" src="resource\media\images\products\thumbnail\Vnand.jpg" alt="Product 1">
+                <div class="details">
+                    <h5 class="product-name">Samsung 980 Pro 250Gb</h5>
+                    <p class="desc">250Gb NVME M.2 2x the data transfer rate of PCIe 3.0</p>
+                </div>
+                <div class="price">Price:₱ 5,500</div>
+                <input class="quantity" type="checkbox" value="980Pro" id="chk980Pro" name="chkItem">
+            </div>
+
+
+            <div class="personal-info" style="margin-top:60px ;">
+                <h2>Contact Information</h2>
+                <form>
+                    <p>Payment method</p>
+                    <div style="padding: 10px 10px 10px 10px;">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Radios" id="Radios" value="option" checked>
+                            <label class="form-check-label" for="Radios">
+                                CASH
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Radios" id="Radios" value="option" checked>
+                            <label class="form-check-label" for="Radios">
+                                Visa
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Radios" id="Radios" value="option" checked>
+                            <label class="form-check-label" for="Radios">
+                                Gcash
+                            </label>
+                        </div>
+
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Radios" id="Radios" value="option" checked>
+                            <label class="form-check-label" for="Radios">
+                                Cash on delivery
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerName">Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" class="form-control" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea class="form-control" name="address" id="address" cols="5" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Noted:</label>
+                        <textarea class="form-control" name="notes" id="notes" cols="5" rows="3"></textarea>
+                    </div>
+
+
+                    <button type="button" class="btn btn-primary" id="buyBtn">Submit</button>
+                    <button type="button" class="btn btn-secondary" id="clearBtn">Clear</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="modal fade" id="orderModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Order Page</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2>Your order summary:</h2>
+                    <p id="aTotal">Total Amount: ₱ 0.00</p>
+                    <p>Thank you for your purchase, we will contact you in time!.</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer-section">
+
+        <footer class="footer  text-light">
+            <span>
+                Powered by
+                <a href="https://www.itiohub.com" target="_blank">BSIT-104-Yonglou.xu</a>
+
+                |
+                <a href="https://www.vultr.com/?ref=7261591" target="_blank">Vultr VPS</a>
+
+                |
+                Thanks
+                <a href="https://www.adamson.edu.ph" target="_blank">Adamson</a>
+
+                |
+                Thanks My Instructor Mrs. Charlene
+
+            </span>
+        </footer>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="resource\js\javascript.js"></script>
+</body>
+
+</html>
