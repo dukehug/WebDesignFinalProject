@@ -10,7 +10,6 @@ https://getbootstrap.com/docs/4.5/components/navbar/
 https://getbootstrap.com/docs/4.5/components/carousel/ 
 - body content 
 https://getbootstrap.com/docs/4.5/content/reboot/
--footer
 
 
 
